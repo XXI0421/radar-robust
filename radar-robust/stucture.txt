@@ -1,0 +1,20 @@
+radar-robust/
+├── data/
+│   ├── train/
+│   └── test/
+├── src/
+│   ├── __init__.py
+│   ├── config.py        # 全局超参与开关
+│   ├── dataset.py       # 数据集与增广
+│   ├── model.py         # 模型族（单层/多层/UNet/…）
+│   ├── loss.py          # 损失族
+│   ├── metric.py        # 指标族
+│   ├── trainer.py       # 训练/验证/保存
+│   └── utils.py         # 工具
+├── scripts/
+│   ├── train.py         # 训练入口
+│   ├── eval.py          # 推理入口
+│   └── tune.py          # 超参搜索（占位）
+├── runs/                # TensorBoard 日志
+├── checkpoints/         # 模型权重
+└── requirements.txt

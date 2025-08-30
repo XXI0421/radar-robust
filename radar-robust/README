@@ -1,0 +1,5 @@
+cd .\radar-robust\
+$env:WANDB_MODE="offline"
+python -m scripts.train
+tensorboard --logdir runs --reload_interval 5
+wandb sync wandb/latest-run   # 一键上传
